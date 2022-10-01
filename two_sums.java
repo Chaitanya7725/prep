@@ -5,23 +5,20 @@ import java.util.HashMap;
  * leetcode url: https://leetcode.com/problems/two-sum/
  */
 public class two_sums {
-    int count = 0;
 
     public int[] helper(int[] nums, int target) {
-
+        int count = 0;
         int[] output = { 0, 1 };
         if (nums.length == 2) {
             return output;
         }
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            // if (nums[i] <= target) {
             map.put(i, nums[i]);
-            // }
         }
         for (Integer name : map.keySet()) {
-            Integer key = name;
-            Integer value = map.get(key);
+            int key = name;
+            int value = map.get(key);
             int diff = target - value;
             if (map.containsValue(diff)) {
                 output[count] = key;
@@ -35,11 +32,11 @@ public class two_sums {
         // int[] arr = { 2, 11, 7, 15 };
         // int target = 9;
 
-        // int[] arr = { 3, 2, 4 };
-        // int target = 6;
-
-        int[] arr = { 3, 1, 3 };
+        int[] arr = { 3, 2, 4 };
         int target = 6;
+
+        // int[] arr = { 3, 1, 3 };
+        // int target = 6;
 
         two_sums two_sums = new two_sums();
         for (int i : two_sums.helper(arr, target)) {
