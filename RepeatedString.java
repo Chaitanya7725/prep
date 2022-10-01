@@ -34,8 +34,7 @@ public class RepeatedString {
         // return array.size();
 
         long multiplier = 0;
-        int count = 0;
-        int length = s.length();
+        long length = s.length();
         long firsthalf = 0;
         if (length == 1 && s.charAt(0) == 'a') {
             return n;
@@ -45,17 +44,17 @@ public class RepeatedString {
                 multiplier++;
             }
         }
-        int divisor = (int) ((n) / length);
+        long divisor = (n) / length;
         if (multiplier > 0)
             firsthalf = multiplier * divisor;
 
-        int reminder = (int) ((n) % length);
+        long reminder = n % length;
         if (reminder > 0) {
-            int start = (int) length * divisor;
-            int end = (start + reminder) - 1;
-            for (int i = start; i <= end; i++) {
-                reminder = (int) ((i) % length);
-                if (s.charAt(reminder) == 'a') {
+            long start = length * divisor;
+            long end = (start + reminder) - 1;
+            for (long i = start; i <= end; i++) {
+                int rem = (int) ((i) % length);
+                if (s.charAt(rem) == 'a') {
                     firsthalf++;
                 }
             }
@@ -82,8 +81,11 @@ public class RepeatedString {
         // int n = 3;// 2
         // String s = "x";
         // int n = 970770;
-        String s = "aadcdaccacabdaabadadaabacdcbcacabbbadbdadacbdadaccbbadbdcadbdcacacbcacddbcbbbaaccbaddcabaacbcaabbaaa";
-        long n = 942885108885L;
+        // String s =
+        // "aadcdaccacabdaabadadaabacdcbcacabbbadbdadacbdadaccbbadbdcadbdcacacbcacddbcbbbaaccbaddcabaacbcaabbaaa";
+        // long n = 942885108885L;
+        String s = "cfimaakj";
+        long n = 554045874191L;
         long a = repeatedString(s, n);
         System.out.println(a);
     }
