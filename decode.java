@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
 // Write a function, uncompress, that takes in a string as an argument. The input string will be formatted into multiple groups according to the following pattern:
 // <number><char>
 // for example, '2c' or '3a'.
@@ -10,31 +15,22 @@
 // test_02:
 // uncompress("2p1o5p"); // -> 'ppoppppp'
 public class decode {
-
-    // private static int getNumber(String ops, int i) {
-    // String number = String.valueOf(ops.charAt(i));
-    // if (String.valueOf(ops.charAt(i + 1)))
-    // return 0;
-    // }
-
     public static void main(String[] args) {
         // String ops = "2c3a1t";
-        String ops = "45s2b";
         // String ops = "2p";
         // String ops = "2p1o5p";
-
+        // String ops = "45s2b";
+        String ops = "2s45b";
         String result = "";
-        for (int i = 0; i < ops.length(); i += 2) {
-            int x = 0;
-            if (Integer.valueOf(String.valueOf(ops.charAt(i + x))) > 0) {
-                System.out.println("More");
-            }
-            int iterate = Integer.valueOf(String.valueOf(ops.charAt(i)));
-            for (int j = 0; j < iterate; j++) {
-                result += ops.charAt(i + 1);
+        String[] arr1 = ops.split("[0-9]");
+        String[] arr2 = ops.split("[a-z]");
+        int x = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i].trim() != "") {
+                result += arr1[i].repeat(Integer.valueOf(arr2[x]));
+                x++;
             }
         }
         System.out.println(result);
     }
-
 }
