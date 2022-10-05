@@ -61,7 +61,7 @@ public class appendDelete {
                     }
                 }
                 if (i == lower.length() - 1) {
-                    if (higher.length() - (i + 1) <= k)
+                    if (higher.length() - i == k)
                         return "Yes";
                     else
                         return "No";
@@ -70,7 +70,7 @@ public class appendDelete {
         } else {
             for (int i = 0; i < higher.length(); i++) {
                 if (higher.charAt(i) != lower.charAt(i)) {
-                    if ((higher.length() - i) + (lower.length() - i) <= k) {
+                    if ((higher.length() - i) + (lower.length() - i) == k) {
                         return "Yes";
                     }
                     break;
