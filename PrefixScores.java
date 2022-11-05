@@ -7,16 +7,17 @@ public class PrefixScores {
     public static List<Integer> getPrefixScores(List<Integer> arr) {
         List<Integer> output=new ArrayList<>();
         int len=arr.size();
-        int currentIndex=0;
-        int iteration=1;
-        int setValue=0;
-        for (int i = 0; i < iteration && i < len; i++) {
-            currentIndex=arr.get(i);
-            setValue=currentIndex + Collections.max(arr);
-            arr.set(i,setValue);
-            output.add(setValue);
-            iteration++;
-            System.out.println(arr);
+        List<Integer> checkList=new ArrayList<>();
+        for (int i = 0; i < len; i++) {
+            int currentValue=arr.get(i);
+            checkList.add(currentValue);
+            int iteration=0;
+            List<Integer> cloned_list = new ArrayList<>(checkList);
+            for (Integer in : cloned_list) {
+                cloned_list.set(iteration,in+Collections.max(cloned_list));
+                iteration++;
+            }
+            output.add(cloned_list.stream().reduce(0, (a, b) -> a + b));
         }
         return output;
     }
