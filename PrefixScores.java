@@ -13,11 +13,15 @@ public class PrefixScores {
             checkList.add(currentValue);
             int iteration=0;
             List<Integer> cloned_list = new ArrayList<>(checkList);
-            for (Integer in : cloned_list) {
-                cloned_list.set(iteration,in+Collections.max(cloned_list));
-                iteration++;
-            }
-            output.add(cloned_list.stream().reduce(0, (a, b) -> a + b));
+            cloned_list.stream().map(number -> number + Collections.max(cloned_list)).forEach(System.out::print);
+//            System.out.println(cloned_list);
+//            for (Integer in : cloned_list) {
+//                cloned_list.set(iteration,in+Collections.max(cloned_list));
+//                iteration++;
+//            }
+//            output.add(cloned_list.stream().reduce(0, (a, b) -> a + b));
+            cloned_list.clear();
+            System.out.println();
         }
         return output;
     }
