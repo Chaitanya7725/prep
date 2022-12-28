@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/
 class maxProduct {
 
     public int maxProduct(int[] nums) {
