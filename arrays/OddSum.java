@@ -1,6 +1,6 @@
 package arrays;
 
-public class oddSum {
+public class OddSum {
 
     public int sumOddLengthSubarrays(int[] arr) {
         int length = arr.length;
@@ -22,7 +22,7 @@ public class oddSum {
     }
 
     public static void main(String[] args) {
-        oddSum o = new oddSum();
+        OddSum o = new OddSum();
         int[] arr = { 1, 4, 2, 5, 3 };
         o.sumOddLengthSubarrays(arr);
     }

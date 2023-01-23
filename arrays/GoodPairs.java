@@ -1,6 +1,6 @@
 package arrays;
 
-public class numberOfGoodPairs {
+public class GoodPairs {
 
     //https://leetcode.com/problems/number-of-good-pairs/
     public int numIdenticalPairs(int[] nums) {
@@ -17,7 +17,7 @@ public class numberOfGoodPairs {
     }
 
     public static void main(String[] args) {
-        numberOfGoodPairs n = new numberOfGoodPairs();
+        GoodPairs n = new GoodPairs();
         int[] nums = { 1, 2, 3 };
         n.numIdenticalPairs(nums);
     }

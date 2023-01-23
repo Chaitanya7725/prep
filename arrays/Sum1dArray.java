@@ -1,8 +1,6 @@
 package arrays;
 
-import java.util.Arrays;
-
-public class sumof1darray {
+public class Sum1dArray {
 
 //    https://leetcode.com/problems/running-sum-of-1d-array/
      public static void main(String[] args) {

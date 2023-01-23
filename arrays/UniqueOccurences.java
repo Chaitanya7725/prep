@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 //https://leetcode.com/problems/unique-number-of-occurrences/
-public class uniqueNoofOccurences {
+public class UniqueOccurences {
 
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -16,7 +16,7 @@ public class uniqueNoofOccurences {
     }
 
     public static void main(String[] args) {
-        uniqueNoofOccurences u = new uniqueNoofOccurences();
+        UniqueOccurences u = new UniqueOccurences();
 //        int[] arr = { 1, 2, 2, 1, 1, 3 };// unique
          int[] arr = { 1, 2 };// not
 //         int[] arr = { -3, 0, 1, -3, 1, 1, 1, -3, 10, 0 };// unique

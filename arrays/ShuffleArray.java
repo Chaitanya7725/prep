@@ -1,6 +1,6 @@
 package arrays;
 
-public class shuffleArray {
+public class ShuffleArray {
 
     //https://leetcode.com/problems/shuffle-the-array/
     public int[] shuffle(int[] nums, int n) {
@@ -15,7 +15,7 @@ public class shuffleArray {
     }
 
     public static void main(String[] args) {
-        shuffleArray s = new shuffleArray();
+        ShuffleArray s = new ShuffleArray();
         int[] nums = { 2, 5, 1, 3, 4, 7 };
         int n = 3;
         int[] res = s.shuffle(nums, n);

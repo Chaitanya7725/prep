@@ -1,13 +1,12 @@
+package arrays;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 /**
- * kidsWithCandies
+ * kidsWithCandies:https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
  */
-public class kidsWithGreatestCandies {
+public class KidsWithGreatestCandies {
 
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int length = candies.length;
@@ -35,7 +34,7 @@ public class kidsWithGreatestCandies {
     }
 
     public static void main(String[] args) {
-        kidsWithGreatestCandies k = new kidsWithGreatestCandies();
+        KidsWithGreatestCandies k = new KidsWithGreatestCandies();
         int[] candies = { 1, 3, 9 };
         int extraCandies = 4;
         k.kidsWithCandies(candies, extraCandies);
