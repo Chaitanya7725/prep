@@ -60,7 +60,7 @@ public class appendDelete {
                         return "No";
                     }
                 }
-                if (i == lower.length() - 1) {
+                if (i == lower.length()) {
                     if (higher.length() - i == k)
                         return "Yes";
                     else
@@ -81,12 +81,12 @@ public class appendDelete {
     }
 
     public static void main(String[] args) {
-        String s = "hackerhappy";
-        String t = "hackerrank";
-        int k = 10;
-        // String t = "aaaaaaaaaa";
-        // String s = "aaaaa";
-        // int k = 4;
+        // String s = "hackerhappy";
+        // String t = "hackerrank";
+        // int k = 8;
+        String t = "aaaaaaaaaa";
+        String s = "aaaaaa";
+        int k = 4;
         // String s = "zzzzz";
         // String t = "zzzzzzzzz";
         // int k = 3;

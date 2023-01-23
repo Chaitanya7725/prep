@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Node {
     int i;
     Node next;
@@ -6,11 +8,10 @@ class Node {
 class Linked {
 
     public Node insert(int i, Node node) {
-        if (node == null) {
+        if (node == null)
             return getNewNode(i);
-        } else {
+        else
             node.next = insert(i, node.next);
-        }
         return node;
     }
 
@@ -30,6 +31,5 @@ public class LinkedList {
         Node root = null;
         Linked a = new Linked();
         root = a.insert(12, root);
-
     }
 }
