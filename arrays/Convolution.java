@@ -14,7 +14,6 @@ public class Convolution {
 
     public static int[][] largestLocal(int[][] grid) {
         int[][] answer=new int[grid.length-2][grid.length-2];
-
         for (int i = 0; i < answer.length; i++) {
             for (int j = 0; j < answer[i].length; j++)
                 answer[i][j]=getMax(grid,i,j);
@@ -24,8 +23,8 @@ public class Convolution {
 
     private static int getMax(int [] [] grid,int i,int j){
         int max=0;
-        for (int k = i; k < i+3; k++) {
-            for (int l = j; l < j+3; l++)
+        for (int k = i; k < i+2; k++) {
+            for (int l = j; l < j+2; l++)
                 max=Math.max(grid[k][l],max);
         }
         return max;
