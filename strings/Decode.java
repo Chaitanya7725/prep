@@ -1,10 +1,5 @@
 package strings;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
 // Write a function, uncompress, that takes in a string as an argument. The input string will be formatted into multiple groups according to the following pattern:
 // <number><char>
 // for example, '2c' or '3a'.
@@ -16,7 +11,7 @@ import java.util.List;
 // uncompress("4s2b"); // -> 'ssssbb'
 // test_02:
 // uncompress("2p1o5p"); // -> 'ppoppppp'
-public class decode {
+public class Decode {
     public static void main(String[] args) {
         // String ops = "2c3a1t";
         // String ops = "2p";

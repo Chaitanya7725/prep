@@ -1,6 +1,6 @@
 package strings;
 
-public class goalParser {
+public class GoalParser {
 
     public static String interpret(String command) {
         String result = "";

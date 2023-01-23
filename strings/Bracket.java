@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class bracket {
+public class Bracket {
     public static void main(String[] args) {
         String s = "([)]";
         // String s = "[()]{}{[()()]()}";
-        boolean result = bracket.isValid(s);
+        boolean result = Bracket.isValid(s);
         System.out.println(result);
     }
 

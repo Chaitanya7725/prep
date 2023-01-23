@@ -1,10 +1,11 @@
 package strings;
 
-public class balancedString {
+public class BalancedString {
     public static void main(String[] args) {
 
-        String equation = "()";
+        String equation = "(()";
         int counter = 0;
+        String status="";
         for (int i = 0; i < equation.length(); i++) {
             if (equation.charAt(i) == '(') {
                 counter++;
@@ -12,10 +13,11 @@ public class balancedString {
                 counter--;
             }
             if (counter == 0) {
-                System.out.println("yes");
+                status="yes";
             } else {
-                System.out.println("no");
+                status="no";
             }
         }
+        System.out.println(status);
     }
 }
