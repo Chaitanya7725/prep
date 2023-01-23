@@ -1,3 +1,5 @@
+package arrays;
+
 import java.util.*;
 
 //https://leetcode.com/problems/daily-temperatures/

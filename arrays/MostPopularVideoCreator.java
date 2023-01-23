@@ -1,3 +1,5 @@
+package arrays;
+
 import java.util.*;
 
 public class MostPopularVideoCreator {
@@ -31,12 +33,12 @@ public class MostPopularVideoCreator {
     }
 
     public static void main(String[] args) {
-//        String[] creators={"alice","bob","alice","chris"};
-//        String[] ids={"one","two","three","four"};
-//        int[] views={5,10,5,4};
-        String[] creators={"alice","alice","alice"};
-        String[] ids={"a","b","c"};
-        int[] views={1,2,2};
+        String[] creators={"alice","bob","bob","alice","chris"};
+        String[] ids={"one","two","three","four","five"};
+        int[] views={5,9,1,5,4};
+//        String[] creators={"alice","alice","alice"};
+//        String[] ids={"a","b","c"};
+//        int[] views={1,2,2};
         System.out.println(
                 mostPopularCreator(creators,ids,views)
         );

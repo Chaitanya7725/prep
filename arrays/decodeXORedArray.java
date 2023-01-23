@@ -1,4 +1,7 @@
+package arrays;
+
 public class decodeXORedArray {
+    //https://leetcode.com/problems/decode-xored-array/
     public int[] decode(int[] encoded, int first) {
         int length = encoded.length;
         int[] original = new int[length + 1];

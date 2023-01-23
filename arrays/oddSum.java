@@ -1,3 +1,5 @@
+package arrays;
+
 public class oddSum {
 
     public int sumOddLengthSubarrays(int[] arr) {

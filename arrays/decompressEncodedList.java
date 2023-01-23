@@ -1,5 +1,8 @@
+package arrays;
+
 public class decompressEncodedList {
 
+    //https://leetcode.com/problems/decompress-run-length-encoded-list/
     public int[] decompressRLElist(int[] nums) {
         int length = nums.length;
         int size = 0;

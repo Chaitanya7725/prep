@@ -1,5 +1,8 @@
+package arrays;
+
 public class numberOfGoodPairs {
 
+    //https://leetcode.com/problems/number-of-good-pairs/
     public int numIdenticalPairs(int[] nums) {
         int count = 0;
         int length = nums.length;
