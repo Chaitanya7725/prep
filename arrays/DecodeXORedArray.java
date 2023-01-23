@@ -1,38 +1,27 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class DecodeXORedArray {
     //https://leetcode.com/problems/decode-xored-array/
     public int[] decode(int[] encoded, int first) {
-        int length = encoded.length;
-        int[] original = new int[length + 1];
-        original[0] = first;
-        String one = Integer.toBinaryString(3);
-        String two = Integer.toBinaryString(5);
-        int blen = one.length();
-        System.out.println(one);
-        System.out.println(two);
-        for (int i = blen - 1; i >= 0; i--) {
-            // System.out.print(Integer.valueOf(one.charAt(i)) + " ");
-            System.out.println(one.charAt(i) + " XOR " + two.charAt(i) + " = " + (one.charAt(i) ^ two.charAt(i)));
+        int [] decoded=new int[encoded.length+1];
+        decoded[0]=first;
+        for (int i = 0; i <encoded.length; i++){
+            decoded[i+1]=decoded[i]^encoded[i];
+            System.out.println(decoded[i+1]+" "+encoded[i]+"="+decoded[i]);
         }
-        // System.out.println(one ^ two);
-        // for (int i = 0; i < length; i++) {
-        // original[i + 1] = encoded[i] - original[i];
-        // first = original[i + 1];
-        // }
-        // System.out.print(encoded[0]-original[0]);
-        // first=encoded[0]-original[0];
-        // System.out.println(encoded[1]-first);
-        // first=encoded[1]-first;
-        // System.out.println(encoded[2]-first);
-        return original;
+        return decoded;
     }
 
     public static void main(String[] args) {
         DecodeXORedArray d = new DecodeXORedArray();
-        int[] encoded = { 6 };
-        int first = 1;
-        d.decode(encoded, first);
+//        int[] encoded = { 1,2,3 };
+//        int first = 1;
+        int[] encoded = {6,2,7,3 };
+        int first = 4;
+        int [] decoded=d.decode(encoded, first);
+        System.out.println(Arrays.toString(decoded));
     }
 
 }
