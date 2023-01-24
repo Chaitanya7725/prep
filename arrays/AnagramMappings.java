@@ -1,17 +1,16 @@
 package arrays;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class AnagramMappings {
 
+    //https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
     public static void main(String[] args) {
         int[] nums1= {12,28,46,32,50};
         int[] nums2= {50,12,32,46,28};
-        anagramMappings(nums1,nums2);
-//        System.out.println();
+        System.out.println(Arrays.toString(anagramMappings(nums1,nums2)));
     }
 
     private static int[] anagramMappings(int[] nums1, int[] nums2) {
