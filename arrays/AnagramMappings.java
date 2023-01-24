@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class AnagramMappings {
 
-    //https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
+    //https://leetcode.com/problems/find-anagram-mappings/
     public static void main(String[] args) {
         int[] nums1= {12,28,46,32,50};
         int[] nums2= {50,12,32,46,28};
