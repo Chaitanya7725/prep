@@ -30,5 +30,6 @@ public class ImageFlip {
             }
         }
         return image;
+
     }
 }
