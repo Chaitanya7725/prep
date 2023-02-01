@@ -12,6 +12,7 @@ public class ArrayEqualPairs {
     }
 
     private static boolean divideArray(int[] nums) {
+//        https://leetcode.com/problems/divide-array-into-equal-pairs/
         boolean status=true;
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i+=2) {
