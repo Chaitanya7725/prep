@@ -1,17 +1,35 @@
 package strings;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class jewelsStones {
 
     //https://leetcode.com/problems/jewels-and-stones/
-    // Approach 1
+
     public static int numJewelsInStones(String jewels, String stones) {
+        // Approach 1
+//        int counter = 0;
+//        for (int i = 0; i < jewels.length(); i++) {
+//            int index = stones.indexOf(String.valueOf(jewels.charAt(i)));
+//            while (index != -1) {
+//                counter++;
+//                index = stones.indexOf(String.valueOf(jewels.charAt(i)), index + 1);
+//            }
+//        }
+//        return counter;
+
+        // Approach 2
         int counter = 0;
-        for (int i = 0; i < jewels.length(); i++) {
-            int index = stones.indexOf(String.valueOf(jewels.charAt(i)));
-            while (index != -1) {
+        List<Character> records=new ArrayList<>();
+        for (Character character : jewels.toCharArray())
+            records.add(character);
+
+        for (int i = 0; i < stones.length(); i++) {
+            if(records.contains(stones.charAt(i)))
                 counter++;
-                index = stones.indexOf(String.valueOf(jewels.charAt(i)), index + 1);
-            }
         }
         return counter;
     }
