@@ -1,7 +1,10 @@
+package strings;
+
 public class jewelsStones {
 
+    //https://leetcode.com/problems/jewels-and-stones/
+    // Approach 1
     public static int numJewelsInStones(String jewels, String stones) {
-        // System.out.println(stones.matches("(.*)"+jewels"+(.*)"));
         int counter = 0;
         for (int i = 0; i < jewels.length(); i++) {
             int index = stones.indexOf(String.valueOf(jewels.charAt(i)));
@@ -14,9 +17,13 @@ public class jewelsStones {
     }
 
     public static void main(String[] args) {
-        String jewels = "aAcCd";
-        String stones = "aAbbCcDDdbabA";
-        int res = numJewelsInStones(jewels, stones);
-        System.out.println(res);
+        String jewels = "aA";
+        String stones = "aAAbbbb";
+        System.out.println(numJewelsInStones(jewels, stones));
+
+        String jewels1 = "z";
+        String stones1 = "ZZ";
+        System.out.println(numJewelsInStones(jewels1, stones1));
+
     }
 }
