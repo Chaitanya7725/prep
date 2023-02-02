@@ -1,14 +1,11 @@
 package strings;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class jewelsStones {
 
     //https://leetcode.com/problems/jewels-and-stones/
-
     public static int numJewelsInStones(String jewels, String stones) {
         // Approach 1
 //        int counter = 0;
