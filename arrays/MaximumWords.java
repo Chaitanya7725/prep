@@ -10,7 +10,8 @@ public class MaximumWords {
     }
 
     public static int mostWordsFound(String[] sentences) {
-        int maximum=0;
+//        Approach 1
+        /*int maximum=0;
         for(String sentence:sentences){
             int count=0;
             String [] words=sentence.split(" ");
@@ -18,6 +19,18 @@ public class MaximumWords {
                 count++;
                 if(count>maximum)
                     maximum=count;
+            }
+        }
+        return maximum;*/
+
+//        Approach 2
+        int maximum=0;
+        for(String sentence:sentences){
+            maximum=0;
+            String[] sent=sentence.split(" ");
+            int length=sent.length;
+            if(length>maximum) {
+                maximum=length;
             }
         }
         return maximum;
