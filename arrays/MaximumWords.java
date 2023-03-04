@@ -4,7 +4,8 @@ package arrays;
 public class MaximumWords {
 
     public static void main(String[] args) {
-        String[] sentences=new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"};
+//        String[] sentences=new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"};
+        String[] sentences=new String[]{"w jrpihe zsyqn l dxchifbxlasaehj","nmmfrwyl jscqyxk a xfibiooix xolyqfdspkliyejsnksfewbjom","xnleojowaxwpyogyrayfgyuzhgtdzrsyococuqexggigtberizdzlyrdsfvryiynhg","krpwiazoulcixkkeyogizvicdkbrsiiuhizhkxdpssynfzuigvcbovm","rgmz rgztiup wqnvbucfqcyjivvoeedyxvjsmtqwpqpxmzdupfyfeewxegrlbjtsjkusyektigr","o lgsbechr lqcgfiat pkqdutzrq iveyv iqzgvyddyoqqmqerbmkxlbtmdtkinlk","hrvh efqvjilibdqxjlpmanmogiossjyxepotezo","qstd zui nbbohtuk","qsdrerdzjvhxjqchvuewevyzlkyydpeeblpc"};
         int maximum=mostWordsFound(sentences);
         System.out.println(maximum);
     }
@@ -26,9 +27,10 @@ public class MaximumWords {
 //        Approach 2
         int maximum=0;
         for(String sentence:sentences){
-            maximum=0;
-            String[] sent=sentence.split(" ");
-            int length=sent.length;
+//            System.out.println(sentence.split(" ").length);
+//            maximum=0;
+            int length=sentence.split(" ").length;
+//            System.out.println(length+" "+maximum+" "+(length>maximum));
             if(length>maximum) {
                 maximum=length;
             }
