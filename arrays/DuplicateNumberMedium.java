@@ -1,7 +1,5 @@
 package arrays;
 
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.*;
 
 public class DuplicateNumberMedium {
