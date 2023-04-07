@@ -11,6 +11,12 @@ public class ColorbyNumbers {
 
         String [] input1={"RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR","R"};
         System.out.println(ColorByNumbers(input1));
+
+        String [] input2={"C",""};
+        System.out.println(ColorByNumbers(input2));
+
+        String [] input3={"RRRRR","RRRRR","RRRRR","RRRRR","RRRRR","R"};
+        System.out.println(ColorByNumbers(input3));
     }
 
     private static String ColorByNumbers(String[] input){
