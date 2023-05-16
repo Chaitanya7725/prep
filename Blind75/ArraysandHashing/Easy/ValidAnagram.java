@@ -14,6 +14,7 @@ public class ValidAnagram {
 
     private static boolean isAnagram(String s, String t) {
         // https://www.scaler.com/topics/sort-a-string-in-java/
+        //Mutable Reduction Operation
         return s.chars().sorted().collect(
                 StringBuilder::new,
                 StringBuilder::appendCodePoint,
