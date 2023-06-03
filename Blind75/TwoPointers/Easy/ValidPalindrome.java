@@ -1,4 +1,4 @@
-package Blind75.TwoPointers;
+package Blind75.TwoPointers.Easy;
 
 public class ValidPalindrome {
 
